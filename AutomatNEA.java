@@ -32,6 +32,12 @@ public class AutomatNEA {
     }
 
     public List<Zustand> gibFolgezustaende0() {
+      Q2  q2 = new Q2();
+      Q0  q0 = new Q0();
+      List folgezustaende = new List<Zustand>();
+      folgezustaende.append(q2);
+      folgezustaende.append(q0);
+      return folgezustaende;
 
 
     }
@@ -49,8 +55,12 @@ public class AutomatNEA {
     }
 
     public List<Zustand> gibFolgezustaende1() {
-      return Q3;
-      return Q0;
+      Q3  q3 = new Q3();
+      Q0  q0 = new Q0();
+      List folgezustaende = new List<Zustand>();
+      folgezustaende.append(q3);
+      folgezustaende.append(q0);
+      return folgezustaende;
     }
     
     public boolean istEndzustand() {
@@ -66,11 +76,12 @@ public class AutomatNEA {
     }
 
     public List<Zustand> gibFolgezustaende0() {
-      return null;
+      Q0  q0 = new Q0();
+      List folgezustaende = new List<Zustand>();
+      folgezustaende.append(q0);
+      return folgezustaende;
     }
-    public List<Zustand> gibFolgezustaende1() {
-      return Q0;
-    }
+
 
 
     public boolean istEndzustand() {
@@ -84,6 +95,7 @@ public class AutomatNEA {
   }
 
   public boolean akzeptiert() {
+
     return false;
   }
   
